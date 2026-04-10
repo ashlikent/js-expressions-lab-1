@@ -1,4 +1,70 @@
 //! Start by creating the variables for the data recorded
+let day1TempF = 32;
+let day2TempC = 25;
+let day3TempF = 70;
+let day4TempC = 18;
+let day5TempF = 80;
+let day6TempC = 15;
+let day7TempF = 72;
+let day8TempC = 28;
+let day9TempF = 68;
+let day10TempC = 20;
+let day11TempF = 75;
+let day12TempC = 23;
+let day13TempF = 82;
+let day14TempC = 30;
+let day15TempF = 65;
+let day16TempC = 22;
+let day17TempF = 77;
+let day18TempC = 26;
+let day19TempF = 78;
+let day20TempC = 24;
+let day21TempF = 73;
+let day22TempC = 21;
+let day23TempF = 79;
+let day24TempC = 27;
+let day25TempF = 71;
+let day26TempC = 19;
+let day27TempF = 74;
+let day28TempC = 17;
+let day29TempF = 76;
+let day30TempC = 29;
+let tot_temperature_in_celsius =
+(day1TempF - 32) * (5/9) +
+day2TempC +
+(day3TempF - 32) * (5/9) +
+day4TempC +
+(day5TempF - 32) * (5/9) +
+day6TempC +
+(day7TempF - 32) * (5/9) +
+day8TempC +
+(day9TempF - 32) * (5/9) +
+day10TempC +
+(day11TempF - 32) * (5/9) +
+day12TempC +
+(day13TempF - 32) * (5/9) +
+day14TempC +
+(day15TempF - 32) * (5/9) +
+day16TempC +
+(day17TempF - 32) * (5/9) +
+day18TempC +
+(day19TempF - 32) * (5/9) +
+day20TempC +
+(day21TempF - 32) * (5/9) +
+day22TempC +
+(day23TempF - 32) * (5/9) +
+day24TempC +
+(day25TempF - 32) * (5/9) +
+day26TempC +
+(day27TempF - 32) * (5/9) +
+day28TempC +
+(day29TempF - 32) * (5/9) +
+day30TempC;
+let tot_temperature_in_fahrenheit = (tot_temperature_in_celsius * 9/5) + (32 * 30);
+
+let avg_temperature_in_celsius = tot_temperature_in_celsius / 30;
+
+let avg_temperature_in_fahrenheit = tot_temperature_in_fahrenheit / 30;
 //* Then work on the conversion of the temperature from Celsius to Fahrenheit (or viceversa)
 
 
@@ -15,8 +81,8 @@
 //* This way you can export them to the test file, this is essential for the tests to work
 
 module.exports = {
-    // tot_temperature_in_fahrenheit,
-    // tot_temperature_in_celsius,
-    // avg_temperature_in_fahrenheit,
-    // avg_temperature_in_celsius
+tot_temperature_in_fahrenheit,
+tot_temperature_in_celsius,
+avg_temperature_in_fahrenheit,
+avg_temperature_in_celsius
 };
